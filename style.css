@@ -1,293 +1,100 @@
 /* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header Styles */
-header {
-    background-color: #008cba;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0073a1 3px solid;
-}
-
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
+    margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-header h1 {
-    float: left;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* Hero Section */
-.hero {
-    background: url('images/hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 20px;
-    margin-bottom: 40px;
-}
-
-.hero .btn {
-    display: inline-block;
-    background: #e8491d;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.hero .btn:hover {
-    background: #cf4318;
-}
-
-/* Features Section */
-.features {
-    padding: 20px 0;
-    background: #fff;
-    text-align: center;
-}
-
-.features h3 {
-    margin-bottom: 20px;
-}
-
-.feature-grid {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.feature-item {
-    flex: 1;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-}
-
-.feature-item img {
-    width: 100px;
-    height: 100px;
-}
-
-.feature-item h4 {
-    margin-top: 20px;
-    font-size: 22px;
-}
-
-.feature-item p {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
-/* Testimonials Section */
-.testimonials {
-    padding: 20px 0;
-    background: #e8e8e8;
+h1 {
+    color: #333;
     text-align: center;
 }
 
-.testimonials h3 {
+/* Login Container */
+.login-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h1 {
     margin-bottom: 20px;
 }
 
-.testimonial-grid {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.testimonial-item {
-    flex: 1;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background: #fff;
-}
-
-.testimonial-item p {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.testimonial-item h4 {
-    font-size: 18px;
-    color: #008cba;
-}
-
-/* Registration Form Styles */
-.registration {
-    padding: 40px 0;
-    background: #fff;
-}
-
-.registration h2 {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.form-container {
-    width: 45%;
-    margin: auto;
-    padding: 20px;
-    background: #f4f4f4;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
-}
-
-form {
+/* Form Styles */
+.login-form {
     display: flex;
     flex-direction: column;
 }
 
-label {
-    margin-bottom: 10px;
-    font-weight: bold;
+.form-group {
+    margin-bottom: 15px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="file"] {
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-button {
+.form-group input:focus, .form-group select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login-button {
     padding: 10px;
-    background: #008cba;
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-button:hover {
-    background: #0073a1;
-}
-
-/* Dashboard Styles */
-.dashboard {
-    padding: 40px 0;
-    background: #f4f4f4;
-}
-
-.dashboard h2 {
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.profile-pic {
-    display: block;
-    margin: 0 auto 20px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.dashboard p {
-    text-align: center;
-    font-size: 18px;
-    margin-bottom: 40px;
-}
-
-.search h3,
-.requests h3 {
-    margin-bottom: 20px;
-}
-
-#consultationRequests,
-#doctorsList {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.request-item,
-.doctor-item {
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.request-item p,
-.doctor-item p {
     font-size: 16px;
-    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Footer Styles */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.register-link {
     margin-top: 20px;
+    text-align: center;
+    color: #555;
 }
 
-footer p {
-    margin: 0;
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
 }
 
-@media (max-width: 768px) {
-    .feature-grid,
-    .testimonial-grid {
-        flex-direction: column;
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 15px 30px;
     }
 
-    .form-container {
-        width: 100%;
+    .login-button {
+        font-size: 14px;
     }
 }
