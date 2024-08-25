@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - e_Dr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="user-dashboard">
+    <header>
+        <div class="container">
+            <h1>User Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="user_dashboard.html">Home</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="container">
+            <h2>Welcome, [User Name]</h2>
+            <img src="[User Profile Picture URL]" alt="User Profile Picture" class="profile-pic">
+            <p>Search for available doctors based on your health needs.</p>
+
+            <div class="search">
+                <h3>Available Doctors</h3>
+                <div id="doctorsList">
+                    <!-- Available doctors will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 e_Dr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
