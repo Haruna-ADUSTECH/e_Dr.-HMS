@@ -1,79 +1,78 @@
-/* Container for the logo and navigation */
-header .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #f8bbd0; /* Light pink background */
-}
-
-/* Logo styling */
-header img {
-    width: 100px; /* Adjust the size of the logo */
-    height: auto;
-}
-
-/* Header title styling */
-header h1 {
-    font-size: 2em;
-    color: #2c3e50; /* Darker color for text */
-    margin: 0;
-    padding-left: 20px; /* Space between the logo and the title */
-}
-
-/* Navigation styling */
-header nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 15px; /* Space between the navigation links */
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: #e91e63; /* Pink color to match the theme */
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-header nav ul li a:hover {
-    background-color: #e91e63; /* Hover effect with the same pink color */
-    color: #fff; /* White text on hover */
-}
-
-/* Overall body styling */
+/* Base Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f8bbd0; /* Light pink background */
+    background-color: #e0f7fa; /* Light blue background */
     color: #2c3e50;
     margin: 0;
     padding: 0;
 }
 
-/* Hero section styling */
+/* Header Styling */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+}
+
+header img {
+    width: 80px; /* Adjust the size of the logo for mobile */
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.8em;
+    color: #2c3e50; /* Darker color for text */
+    margin: 0;
+    padding-left: 10px; /* Less padding for mobile */
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 10px 0 0 0; /* Adjust margin for mobile */
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of navigation links on small screens */
+    gap: 10px; /* Smaller gap for mobile */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #3498db; /* Blue color to match the logo */
+    font-weight: bold;
+    padding: 8px 15px; /* Adjust padding for mobile */
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #3498db; /* Hover effect with the same blue color */
+    color: #fff; /* White text on hover */
+}
+
+/* Hero Section */
 .hero {
-    background-color: #e91e63; /* Matches the pink theme */
+    background-color: #3498db; /* Matches the logo's color scheme */
     color: white;
     text-align: center;
-    padding: 50px 0;
+    padding: 40px 10px; /* Adjust padding for mobile */
 }
 
 .hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2em; /* Adjust font size for mobile */
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+    font-size: 1em; /* Adjust font size for mobile */
+    margin-bottom: 20px;
 }
 
 .hero .btn {
     background-color: white;
-    color: #e91e63;
+    color: #3498db;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -81,31 +80,31 @@ body {
 }
 
 .hero .btn:hover {
-    background-color: #c2185b; /* Darker pink on hover */
+    background-color: #2980b9; /* Darker blue on hover */
     color: white;
 }
 
-/* Features section */
+/* Features Section */
 .features {
-    padding: 50px 0;
-    background-color: #f48fb1; /* Light pink background for features */
+    padding: 40px 10px; /* Adjust padding for mobile */
+    background-color: #b3e5fc; /* Light blue background for features */
 }
 
 .features h3 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #2c3e50;
 }
 
 .feature-grid {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack features on top of each other on mobile */
     gap: 20px;
 }
 
 .feature-item {
-    background-color: #f8bbd0; /* Matches overall theme */
-    padding: 20px;
+    background-color: #e0f7fa; /* Matches overall theme */
+    padding: 15px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -114,7 +113,7 @@ body {
 .feature-item img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .feature-item h4 {
@@ -126,27 +125,27 @@ body {
     color: #7f8c8d;
 }
 
-/* Testimonials section */
+/* Testimonials Section */
 .testimonials {
-    padding: 50px 0;
-    background-color: #f48fb1; /* Light pink background for testimonials */
+    padding: 40px 10px; /* Adjust padding for mobile */
+    background-color: #b3e5fc; /* Light blue background for testimonials */
 }
 
 .testimonials h3 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: #2c3e50;
 }
 
 .testimonial-grid {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column; /* Stack testimonials on top of each other on mobile */
     gap: 20px;
 }
 
 .testimonial-item {
-    background-color: #f8bbd0; /* Matches overall theme */
-    padding: 20px;
+    background-color: #e0f7fa; /* Matches overall theme */
+    padding: 15px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -154,12 +153,12 @@ body {
 
 .testimonial-item p {
     color: #2c3e50;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-style: italic;
 }
 
 .testimonial-item h4 {
-    color: #e91e63;
+    color: #3498db;
 }
 
 /* Footer */
@@ -167,9 +166,62 @@ footer {
     background-color: #2c3e50;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 10px; /* Adjust padding for mobile */
 }
 
 footer p {
     margin: 0;
 }
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Stack logo and navigation */
+        text-align: center;
+    }
+
+    header h1 {
+        padding-left: 0;
+        margin-top: 10px; /* Add margin to separate from logo */
+    }
+
+    header nav ul {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .features {
+        padding: 30px 10px;
+    }
+
+    .features h3 {
+        font-size: 1.8em;
+    }
+
+    .feature-item {
+        padding: 15px;
+    }
+
+    .testimonials {
+        padding: 30px 10px;
+    }
+
+    .testimonials h3 {
+        font-size: 1.8em;
+    }
+
+    .testimonial-item {
+        padding: 15px;
+    }
+            }
