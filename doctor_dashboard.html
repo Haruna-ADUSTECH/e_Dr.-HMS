@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard - e_Dr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="doctor-dashboard">
+    <header>
+        <div class="container">
+            <h1>Doctor Dashboard</h1>
+            <nav>
+                <ul>
+                    <li><a href="doctor_dashboard.html">Home</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="dashboard">
+        <div class="container">
+            <h2>Welcome, Dr. [Doctor Name]</h2>
+            <img src="[Doctor Profile Picture URL]" alt="Doctor Profile Picture" class="profile-pic">
+            <p>Here you can view and manage your consultation requests.</p>
+
+            <div class="requests">
+                <h3>Pending Consultation Requests</h3>
+                <div id="consultationRequests">
+                    <!-- Consultation requests will be dynamically loaded here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 e_Dr. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="app.js"></script>
+</body>
+</html>
