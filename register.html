@@ -3,86 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e_Dr - Register</title>
+    <title>Register - e_Dr</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>e_Dr Registration</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="registration">
-        <div class="container">
-            <h2>Register as a User or Doctor</h2>
-            
-            <div class="register-forms">
-                <!-- User Registration Form -->
-                <div class="form-container">
-                    <h3>User Registration</h3>
-                    <form id="registerUserForm" enctype="multipart/form-data">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-
-                        <label for="whatsappNumber">WhatsApp Number:</label>
-                        <input type="text" id="whatsappNumber" name="whatsappNumber" required>
-
-                        <label for="profilePictureUser">Upload Profile Picture:</label>
-                        <input type="file" id="profilePictureUser" name="profilePictureUser" accept="image/*" required>
-
-                        <button type="submit">Register as User</button>
-                    </form>
-                </div>
-
-                <!-- Doctor Registration Form -->
-                <div class="form-container">
-                    <h3>Doctor Registration</h3>
-                    <form id="registerDoctorForm" enctype="multipart/form-data">
-                        <label for="name">Full Name:</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required>
-
-                        <label for="whatsappNumber">WhatsApp Number:</label>
-                        <input type="text" id="whatsappNumber" name="whatsappNumber" required>
-
-                        <label for="specialty">Specialty:</label>
-                        <input type="text" id="specialty" name="specialty" required>
-
-                        <label for="profilePictureDoctor">Upload Profile Picture:</label>
-                        <input type="file" id="profilePictureDoctor" name="profilePictureDoctor" accept="image/*" required>
-
-                        <button type="submit">Register as Doctor</button>
-                    </form>
-                </div>
+    <div class="register-container">
+        <h1>Register - e_Dr</h1>
+        <form action="register_process.php" method="POST" enctype="multipart/form-data" class="register-form">
+            <div class="form-group">
+                <label for="user_type">I am a:</label>
+                <select id="user_type" name="user_type" required>
+                    <option value="">Select...</option>
+                    <option value="user">User (Patient)</option>
+                    <option value="doctor">Doctor</option>
+                </select>
             </div>
-        </div>
-    </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 e_Dr. All rights reserved.</p>
-        </div>
-    </footer>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
 
-    <!-- Link to external JavaScript file -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp_number">WhatsApp Number:</label>
+                <input type="text" id="whatsapp_number" name="whatsapp_number" placeholder="Enter your WhatsApp number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="profile_picture">Profile Picture:</label>
+                <input type="file" id="profile_picture" name="profile_picture" accept="image/*" required>
+            </div>
+
+            <div class="form-group specialization-group" style="display: none;">
+                <label for="specialization">Specialization:</label>
+                <input type="text" id="specialization" name="specialization" placeholder="Enter your specialization">
+            </div>
+
+            <button type="submit" class="register-button">Register</button>
+
+            <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+
     <script src="app.js"></script>
 </body>
 </html>
